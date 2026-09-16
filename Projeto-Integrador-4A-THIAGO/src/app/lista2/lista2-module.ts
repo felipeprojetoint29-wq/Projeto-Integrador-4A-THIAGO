@@ -5,7 +5,7 @@ import { Lista2RoutingModule } from './lista2-routing-module';
 import { Ex1 } from './ex1/ex1';
 
 @NgModule({
-  declarations: [Ex1],
-  imports: [CommonModule, Lista2RoutingModule],
+  declarations: [/* outros componentes não-standalone */],
+  imports: [CommonModule, Ex1], // importa em vez de declarar
 })
-export class Lista2Module {}
+export class Lista2Module { }
